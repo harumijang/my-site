@@ -1,3 +1,22 @@
+:root {
+  --main-font: "Space Mono", monospace;
+  --s-font: "Roboto", sans-serif;
+  /* --accent-color: #4ecdc4; */
+  --accent-color: #eeba00;
+
+  --text-color: #333333;
+  --bg-color: #f3f3f3;
+
+  /* --accent-color: #eeba00; */
+  /* --background-color: #19191a; */
+}
+body {
+  background-color: var(--bg-color) !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .App {
   text-align: center;
 }
@@ -25,7 +44,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #05471b;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +54,216 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  z-index: 999;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+  font-family: var(--main-font);
+  color: var(--text-color);
+
+  /* color: var(--accent-color); */
+}
+
+/* Change the color of links on hover */
+.topnav a:hover
+/* .worknav a:hover  */ {
+  color: var(--accent-color);
+}
+
+.worknav {
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  z-index: 999;
+  /* float: center; */
+}
+
+.worknav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
+
+.worknav #codingHover:hover,
+#designHover:hover,
+#project-header:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.worknav #codingHover:visited,
+#designHover:visited {
+  color: var(--accent-color);
+}
+
+/* Change the color of links on hover */
+#logo:hover,
+#github:hover,
+#linkedin:hover,
+#github1:hover,
+#open:hover,
+#twitter:hover,
+#type2:hover,
+#moviebox:hover,
+#cherry:hover {
+  opacity: 0.5;
+}
+
+#logo {
+  width: 75px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  padding-bottom: 20px;
+}
+
+#home-intro {
+  font-family: var(--main-font);
+  font-size: 130px;
+  padding-left: 50px;
+  position: relative;
+  text-align: left;
+  padding-top: 120px;
+  color: var(--text-color);
+}
+
+#home-body {
+  font-family: var(--main-font);
+  font-size: 30px;
+  padding-right: 50px;
+  padding-top: 95px;
+  text-align: right;
+  color: var(--text-color);
+}
+
+.containerl {
+  position: absolute;
+  text-align: left;
+  padding-left: 0px !important;
+  width: 100%;
+  /* left: 50px; */
+}
+
+.main {
+  position: relative;
+  min-height: 60px;
+  /* right: 200px; */
+  padding-top: 15px;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 75%;
+  padding-top: 100px;
+  /* margin: auto; */
+  z-index: -1;
+  background-color: var(--accent-color);
+  top: 120px;
+}
+
+mark.white {
+  color: var(--bg-color);
+  font-size: 130px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background-color: var(--bg-color) !important;
+}
+
+.mark,
+mark {
+  color: var(--bg-color);
+  background-color: var(--bg-color) !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.container.about {
+  padding-top: 150px;
+  font-family: var(--s-font);
+  text-align: left;
+  font-size: 18px;
+  right: 0;
+  float: right;
+  padding-right: 50px;
+  /* padding-left: 50px; */
+  color: var(--text-color);
+}
+
+.section-header {
+  font-family: var(--main-font);
+  color: var(--accent-color);
+}
+
+#me {
+  width: 500px;
+  filter: grayscale(100%);
+}
+
+#github {
+  margin-left: 15px;
+  width: 60px;
+}
+
+#github1 {
+  margin-left: 10px;
+  width: 33px;
+}
+
+#open {
+  margin-right: -1px;
+  width: 30px;
+}
+
+#linkedin {
+  width: 60px;
+  margin-left: 20px;
+}
+
+#email-link {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.container {
+  padding-top: 180px;
+}
+
+.poster > div img {
+  width: 45%;
+}
+
+.mix {
+  /* width: 500px; */
+  height: 500px;
+}
+
+.row-full {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  height: 600px;
+  /* margin-top: 100px; */
+  /* padding-top: 50px; */
+  left: 50%;
 }
