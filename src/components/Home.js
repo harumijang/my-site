@@ -10,9 +10,7 @@ class Home extends Component {
     return (
       <div class="containerl">
         <div class="main">
-          <h1 id="home-intro">
-            Hi, my name <mark>is</mark> Harumi
-          </h1>
+          <h1 id="home-intro">Hi, my name is Harumi</h1>
         </div>
         <h2 id="home-body">
           <Typewriter

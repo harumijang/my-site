@@ -17,6 +17,7 @@ import CODING from "./components/Coding";
 import DESIGN from "./components/Design";
 import Photos from "./components/Photos";
 import Mixology from "./components/Mixology";
+import resume from "./assets/resume.pdf";
 
 function App() {
   return (
@@ -36,7 +37,9 @@ function App() {
             <NavLink activeStyle={{ color: "#eeba00" }} to="/photos">
               <a>Photos</a>
             </NavLink>
-            <a>Resume</a>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
           </div>
         </div>
         <Route exact path="/" component={Home} />
