@@ -173,7 +173,7 @@ body {
   content: "";
   position: absolute;
   height: 400px;
-  width: 75%;
+  width: 100%;
   padding-top: 100px;
   /* margin: auto; */
   z-index: -1;
@@ -251,6 +251,7 @@ mark {
 
 .poster > div img {
   width: 45%;
+  height: 100%;
 }
 
 .mix {
