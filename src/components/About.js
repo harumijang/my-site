@@ -24,8 +24,8 @@ class About extends Component {
           </p>
           <p>
             You can reach me at:{" "}
-            <a id="email-link" href="mailto: jang.ha@northeastern.edu">
-              jang.ha@northeastern.edu
+            <a id="email-link" href="mailto: h.jang521@yahoo.com">
+              h.jang521@yahoo.com
             </a>
           </p>
           <div class="links row">
