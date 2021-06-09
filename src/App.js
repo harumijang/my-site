@@ -1,10 +1,5 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  // Link,
-  NavLink,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
 import { NavLink as Link } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
@@ -18,8 +13,22 @@ import DESIGN from "./components/Design";
 import Photos from "./components/Photos";
 import Mixology from "./components/Mixology";
 import resume from "./assets/resume.pdf";
+import { FaBars } from "react-icons/fa";
 
 function App() {
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  // useEffect(() => {
+  //   myFunction();
+  // }, []);
+
   return (
     <div className="App">
       <Router>
@@ -27,7 +36,7 @@ function App() {
           <Link to="/">
             <img id="logo" src={logo}></img>
           </Link>
-          <div class="topnav">
+          <div class="topnav" id="myTopnav">
             <NavLink activeStyle={{ color: "#eeba00" }} to="/about">
               <a>About</a>
             </NavLink>
@@ -40,6 +49,13 @@ function App() {
             <a href={resume} target="_blank" rel="noopener noreferrer">
               Resume
             </a>
+            <a
+              href="javascript:void(0);"
+              class="icon"
+              onClick={() => myFunction()}
+            >
+              <FaBars />
+            </a>{" "}
           </div>
         </div>
         <Route exact path="/" component={Home} />
