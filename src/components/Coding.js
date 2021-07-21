@@ -95,17 +95,17 @@ class CODING extends Component {
         <br></br>
         <div class="row">
           <div class="col-sm">
-            <a href="https://moviebox4u.com/" target="_blank">
+            <a href="https://moviebox-seven.vercel.app/" target="_blank">
               <img id="moviebox" src={moviebox} style={{ width: "80%" }}></img>
             </a>
           </div>
           <div class="col-sm">
             {" "}
-            <a href="https://moviebox4u.com/" target="_blank">
+            <a href="https://moviebox-seven.vercel.app/" target="_blank">
               <H1 id="project-header">MOVIEBOX</H1>
             </a>
             <div style={{ float: "left", marginLeft: "25px" }}>
-              <a href="https://moviebox4u.com/" target="_blank">
+              <a href="https://moviebox-seven.vercel.app/" target="_blank">
                 <img id="open" src={open}></img>
               </a>
               <a href="https://github.com/harumijang/moviebox" target="_blank">
